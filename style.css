@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300&family=Lato:wght@100;300;400;700;900&family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Yellowtail&display=swap');
+
+
+*{
+    margin: 0;
+    paddinG: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.nav-bar{
+    height: 20vh;
+    background-color: black;
+}
+.top-header{
+    height: 5vh;
+    background-color: rgb(16,110,234);
+}
+.bottom-header{
+    height: 15vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 4px rgb(165, 165, 165);
+}
+.icons{
+    fill: white;
+    width: 16px;
+    height: 16px;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.top-side{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-side-top>div{
+    margin-right: 15px;
+}
+.email{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.left-side-top>div a{
+    margin-left: 10px;
+    font-size: 13px;
+}
+.phone{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.right-side-top{
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+.right-side-top .icons{
+    fill: rgb(184,212,246);
+    width: 16px;
+    height: 16px;
+}
+.right-side-top li{
+    margin-right: 10px;
+}
+
+.left-side-top{
+    display: flex;
+    align-items: center;
+}
+
+.logo-side{
+    font-size: 30px;
+    font-weight: 700;
+}
+.logo-side span{
+    color: blue;
+}
+.bottom-sde{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menus{
+      display: flex;
+      list-style: none;
+}
+.menus li{
+    margin-left: 20px;
+    padding:4px 5px;
+    position: relative;
+    overflow: hidden;
+}
+.menus li::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #106eea;
+    position: absolute;
+    left: -100%;
+    bottom: 0;
+    transition: .5s;
+}
+.menus li:hover::after{
+    left: 0;
+    transition: .5s;
+}
+.menus li:hover a{
+    color: rgb(16,110,234);
+    transition: .4s;
+}
+
+
+.menus a{
+    text-transform: capitalize;
+    font-weight: 600;
+    color: rgb(19, 19, 26);
+}
+.menus a:hover{
+    color: rgb(34, 57, 94);
+}
+
+.sect1{
+    height: 80vh;
+    background: url(https://bootstrapmade.com/demo/templates/BizLand/assets/img/hero-bg.jpg);
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+}
+.covercolor{
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.678);
+}
+
+
+.flex h1{
+    font-size:45px;
+}
+.flex>span{
+    color: rgb(16,110,234);
+}
+.flex p{
+    font-size: 20px;
+    padding: 10px 0;
+    color: rgb(54, 54, 54);
+}
+.btns{
+    padding: 14px 0;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 3px 10px gray;
+}
+.btns .gets{
+    padding: 10px 25px;
+    margin-right: 10px;
+    background-color: #106eea;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+}
+.btns .playlist{
+    fill: #106eea;
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+}
+.btns span{
+    color: black;
+}
+.btns .play{
+    padding: 10px 25px;
+    margin-right: 10px;
+    background-color: #106eea00;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+}
+.flex{
+    height: 80vh;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sect2{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: blue;
+
+}
+.sect2 div:first-child{
+    flex: 1;
+    background-color: blueviolet;
+}
+.sect2 div:nth-child(1){
+    flex: 1;
+    background-color: rgba(165, 42, 42, 0);
+    display: flex;
+}
+.sect2 div:nth-child(2) p{
+    flex-direction: 1;
+}
+
+.sect2 div:last-child{
+    flex: 1;
+    background-color: cadetblue;
+}
